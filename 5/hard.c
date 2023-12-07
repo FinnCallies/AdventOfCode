@@ -28,6 +28,9 @@ struct transitions {
 
 
 uint32_t count_seeds(char* line) {
+
+    // FIXME
+
     uint32_t count = 0;
     for (uint32_t i = (strchr(line, ':') - line); i < strlen(line); i++) {
         if (line[i] >= '0' && line[i] <= '9') {
@@ -40,6 +43,9 @@ uint32_t count_seeds(char* line) {
 
 
 void set_seeds(char* line, struct transitions* plants) {
+
+    // FIXME
+
     uint32_t counter = 0;
     char* ptr;
     for (uint32_t i = (strchr(line, ':') - line); i < strlen(line); i++) {
